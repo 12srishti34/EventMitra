@@ -1,0 +1,123 @@
+.my-bookings {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.my-bookings h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Payment status colors */
+td:nth-child(5) {
+  font-weight: bold;
+}
+
+td:nth-child(5)::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+td:nth-child(5):contains("Paid")::before {
+  background-color: #4caf50; /* green for paid */
+}
+
+td:nth-child(5):contains("Pending")::before {
+  background-color: #ff9800; /* orange for pending */
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  td::before {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  td:nth-of-type(1)::before { content: "Service"; }
+  td:nth-of-type(2)::before { content: "Vendor"; }
+  td:nth-of-type(3)::before { content: "Date"; }
+  td:nth-of-type(4)::before { content: "Price"; }
+  td:nth-of-type(5)::before { content: "Payment Status"; }
+}
+
+/* Dark mode support */
+body.dark .my-bookings {
+  color: #eee;
+}
+
+body.dark table th {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark table tr:nth-child(even) {
+  background-color: #2c2c2c;
+}
+
+body.dark table td {
+  color: #ccc;
+}

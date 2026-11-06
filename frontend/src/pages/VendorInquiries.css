@@ -1,0 +1,110 @@
+/* VENDOR INQUIRIES CONTAINER */
+.vendor-inquiries {
+  width: 95%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.vendor-inquiries h1 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* TABLE STYLING */
+.vendor-inquiries table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.vendor-inquiries th,
+.vendor-inquiries td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  text-align: left;
+}
+
+.vendor-inquiries th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+
+.vendor-inquiries tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* REPLY INPUT + BUTTON */
+.vendor-inquiries input {
+  padding: 6px 8px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 70%;
+  margin-right: 5px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.vendor-inquiries input:focus {
+  border-color: orange;
+  box-shadow: 0 0 0 2px rgba(255,165,0,0.2);
+}
+
+.vendor-inquiries button {
+  padding: 6px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ff8c00, #ff7a00);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.vendor-inquiries button:hover {
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vendor-inquiries table, 
+  .vendor-inquiries thead, 
+  .vendor-inquiries tbody, 
+  .vendor-inquiries th, 
+  .vendor-inquiries td, 
+  .vendor-inquiries tr { 
+    display: block; 
+  }
+
+  .vendor-inquiries tr { margin-bottom: 15px; }
+
+  .vendor-inquiries td {
+    padding-left: 50%;
+    position: relative;
+    text-align: left;
+  }
+
+  .vendor-inquiries td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    font-weight: 600;
+  }
+
+  .vendor-inquiries input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .vendor-inquiries button {
+    width: 100%;
+  }
+}

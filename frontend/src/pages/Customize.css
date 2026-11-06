@@ -1,0 +1,95 @@
+/* PAGE */
+.customize-page {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* 🎥 BACKGROUND VIDEO */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.12);
+  z-index: -1;
+}
+
+/* CONTENT */
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+/* HERO */
+.customize-hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: rgba(251, 191, 36, 0.45); /* 👈 SAME yellow as Home */
+  color: white;
+  border-radius: 0 0 40px 40px;
+}
+.customize-hero h1 {
+  font-size: 2.5rem;
+}
+
+.customize-hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* GRID */
+.category-grid {
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.category-card {
+  background: rgba(255,255,255,0.6); /* 👈 transparent */
+  backdrop-filter: blur(8px);
+  border-radius: 25px;
+  padding: 30px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* ICON */
+.category-card .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.category-card h3 {
+  font-size: 18px;
+}
+
+/* HOVER */
+.category-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 117, 140, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .customize-hero h1 {
+    font-size: 2rem;
+  }
+}

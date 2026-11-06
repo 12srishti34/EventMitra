@@ -1,0 +1,165 @@
+/* NAVBAR BASE */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* CONTAINER */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f59e0b; /* 🟡 yellow */
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover underline */
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #fbbf24; /* 🟡 */
+  transition: 0.3s;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* ACTION BUTTONS */
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* BOOK BUTTON */
+.book-btn {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b); /* 🟡 gradient */
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  transform: scale(1.05);
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #f59e0b;
+  background: transparent;
+  color: #f59e0b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #fef3c7; /* light yellow */
+}
+
+/* SIGNUP BUTTON */
+.signup-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  background: #f59e0b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  transform: scale(1.05);
+}
+
+/* DASHBOARD BUTTON */
+.dashboard-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #3b82f6; /* blue */
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+  background: #2563eb; /* darker blue */
+  transform: scale(1.05);
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ef4444; /* red border */
+  background: transparent;
+  color: #ef4444;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #fef2f2; /* light red background */
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-container {
+    padding: 10px 20px;
+  }
+
+  .book-btn {
+    display: none;
+  }
+}

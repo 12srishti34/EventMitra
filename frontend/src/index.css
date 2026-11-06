@@ -1,0 +1,30 @@
+:root {
+  --primary: #f59e0b;
+  --secondary: #fbbf24;
+  --light: #fef3c7;
+  --dark: #92400e;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;  /* ✅ FIXED */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--light);
+}
+
+* {
+  box-sizing: border-box;  /* ✅ IMPORTANT FIX */
+}
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}

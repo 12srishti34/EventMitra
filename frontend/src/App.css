@@ -1,0 +1,7 @@
+:root {
+  --primary: #f59e0b;        /* main yellow */
+  --secondary: #fbbf24;      /* light yellow */
+  --light: #fef3c7;          /* soft bg */
+  --dark: #92400e;           /* dark yellow/brown */
+  --white: #ffffff;
+}
