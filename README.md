@@ -43,4 +43,4 @@ Developed collaboratively by:
 
 ---
 
-**EventMitra – Plan Better. Celebrate More! 🎊**
+**EventMitra – Plan Better. Celebrate More! **
