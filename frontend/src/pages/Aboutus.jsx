@@ -8,6 +8,7 @@ function About() {
       
 
       {/* Main Content */}
+      <h1>About Us</h1>
       <section className="about-content">
         <p>
           EventMitra is designed to simplify the process of event planning by
