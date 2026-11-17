@@ -1,10 +1,10 @@
-#  EventMitra – Event Planning Platform
+# EventMitra – Event Planning Platform
 
 EventMitra is a web-based event planning platform designed to make organizing events easier and more convenient.
 
 It brings multiple event-related services together in one place, helping users explore services and manage their event requirements.
 
-##  Features
+## Features
 
 - **Event Selection:** Explore different event types such as weddings, birthdays, and corporate events.
 - **Multiple Services:** Find services like decoration, catering, DJ, and venue arrangements.
@@ -12,7 +12,7 @@ It brings multiple event-related services together in one place, helping users e
 - **Inquiry Management:** Manage customer inquiries and booking-related requests.
 - **Easy Coordination:** Aims to simplify communication between customers and service providers.
 
-##  Technologies Used
+## Technologies Used
 
 | Frontend | Backend | Database |
 |---|---|---|
@@ -20,21 +20,69 @@ It brings multiple event-related services together in one place, helping users e
 | HTML | Express.js | |
 | CSS | JavaScript | |
 
-##  Project Structure
+## Project Structure
 
 ```text
 EventMitra/
 ├── frontend/
 ├── backend/
+├── Screenshots/
 ├── .gitignore
 └── README.md
 ```
 
-##  Project Objective
+## Screenshots
+
+### 1. Home Page
+![Home Page](Screenshots/home.png)
+
+### 2. About Us
+![About Us](Screenshots/about.png)
+
+### 3. User Signup
+![Signup](Screenshots/signup.png)
+
+### 4. User Login
+![Login](Screenshots/login.png)
+
+### 5. Services
+![Services](Screenshots/services.png)
+
+### 6. Vendors
+![Vendors](Screenshots/vendors.png)
+
+### 7. Booking Page
+![Bookings](Screenshots/bookings.png)
+
+### 8. Customize Event
+![Customize](Screenshots/customize.png)
+
+### 9. Generate Event Plan
+![Generate Plan](Screenshots/generateplan.png)
+
+### 10. Event Plan
+![Plan](Screenshots/plan.png)
+
+### 11. User Dashboard
+![User Dashboard](Screenshots/userdashboard.png)
+
+### 12. User Inquiries
+![User Inquiries](Screenshots/userinquiries.png)
+
+### 13. Vendor Dashboard
+![Vendor Dashboard](Screenshots/vendordashboard.png)
+
+### 14. Inquiry Management
+![Inquiry Management](Screenshots/inquiry.png)
+
+### 15. FAQ
+![FAQ](Screenshots/FAQ.png)
+
+## Project Objective
 
 The objective of EventMitra is to provide a convenient platform for event planning and service management, reducing the effort required to coordinate with multiple service providers.
 
-##  Contributors
+## Contributors
 
 Developed collaboratively by:
 
@@ -43,4 +91,4 @@ Developed collaboratively by:
 
 ---
 
-**EventMitra – Plan Better. Celebrate More! **
+**EventMitra – Plan Better. Celebrate More!**
