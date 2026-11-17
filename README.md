@@ -111,9 +111,9 @@ EventMitra/
 
 The objective of EventMitra is to provide a convenient platform for event planning and service management, reducing the effort required to coordinate with multiple service providers.
 
-## Contributors
+## Developer
 
-- **Srishti Chadha** – Frontend Development and UI/UX
+- **Srishti Chadha**
 
 
 ---
